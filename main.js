@@ -15,7 +15,7 @@ function nuevocursoaprobado(cursito){
 
 nuevocursoaprobado("Curso De Maquetacion Movil")
 
- console.log(josue);
+ 
 
  //Instancia de prototipo
 
@@ -43,3 +43,33 @@ nuevocursoaprobado("Curso De Maquetacion Movil")
  )
 
  Anita.aprobarCursos("Curso Intermedio e HTML Y css");
+
+ //Clases y sintexis de prototipos
+
+ class Student2{
+     constructor({
+         name, 
+         age, 
+         cursosAprobados,
+         email
+        }
+        ){
+         
+        this.name = name;
+        this.age = age;
+        this.cursosAprobados = cursosAprobados;
+        this.email = email;
+     }
+
+    aprobarCursos(nuevoCursito){
+        this.cursosAprobados.push(nuevoCursito);
+    }
+ }
+
+ const willison = new Student2 ({
+     name : "Willison",
+     email : "16-00436@usb.ve",
+     age : 26,
+     cursosAprobados :["Curso de programacion Orientada a objetos."]
+    }
+ )
